@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MicrosoftFluentUIAspNetCoreTemplates.Shared/MicrosoftFluentUIAspNetCoreTemplates.Shared.csproj" />
+  <Project Path="MicrosoftFluentUIAspNetCoreTemplates.Web.Client/MicrosoftFluentUIAspNetCoreTemplates.Web.Client.csproj" />
+  <Project Path="MicrosoftFluentUIAspNetCoreTemplates.Web/MicrosoftFluentUIAspNetCoreTemplates.Web.csproj" />
+  <Project Path="MicrosoftFluentUIAspNetCoreTemplates/MicrosoftFluentUIAspNetCoreTemplates.csproj" />
+</Solution>

@@ -1,0 +1,28 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<div role="status" style="display: flex; align-items: center; gap: 12px; padding-bottom: 1em;">
+    Current count: <FluentBadge Shape="BadgeShape.Rounded" Content="@($"{currentCount}")" />
+</div>
+
+<FluentButton Appearance="ButtonAppearance.Primary" OnClick="@IncrementCount">Click me</FluentButton>
+
+
+
+
+<FluentButton OnClick="@(async e => await NotificationService.ShowSuccessToastAsync($"Success toast #{currentCount}", lifetime: 3))">
+        Show Success
+    </FluentButton>
+
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

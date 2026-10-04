@@ -1,0 +1,80 @@
+﻿<FluentNav Id="main-menu" Width="260px">
+    <FluentNavItem Href="/" Match="NavLinkMatch.All" IconRest="@(new FluentUIIcons.Regular.Size20.Home())" IconActive="@(new FluentUIIcons.Filled.Size20.Home())">Home</FluentNavItem>
+        <FluentNavItem Href="counter" IconRest="@(new FluentUIIcons.Regular.Size20.NumberSymbolSquare())" IconActive="@(new FluentUIIcons.Filled.Size20.NumberSymbolSquare())">Counter</FluentNavItem>
+        <FluentNavItem Href="weather" IconRest="@(new FluentUIIcons.Regular.Size20.WeatherPartlyCloudyDay())" IconActive="@(new FluentUIIcons.Filled.Size20.WeatherPartlyCloudyDay())">Weather</FluentNavItem>
+
+
+
+
+
+
+
+
+
+    <!-- Divider -->
+    <FluentDivider />
+
+
+    <!-- Employee Management -->
+    <FluentNavSectionHeader Title="Employee Management" />
+
+  <FluentNavCategory 
+                   Title="Job Postings"
+                       IconRest="@(new FluentUIIcons.Regular.Size20.NotePin().WithColor(FluentUIColor.Error))"
+                   IconActive="@(new FluentUIIcons.Filled.Size20.NotePin().WithColor(FluentUIColor.Success))">
+    <FluentNavItem>Openings</FluentNavItem>
+    <FluentNavItem OnClick='@(async (MouseEventArgs _) => await DialogService.ShowInfoAsync("Submissions selected"))'>
+        Submissions
+    </FluentNavItem>
+
+    
+</FluentNavCategory>
+
+    <FluentNavCategory Title="Job Postingss"
+                       IconRest="@(new FluentUIIcons.Regular.Size20.NotePin().WithColor(FluentUIColor.Error))"
+                       IconActive="@(new FluentUIIcons.Filled.Size20.NotePin().WithColor(FluentUIColor.Success))">
+        <FluentNavItem>Openings</FluentNavItem>
+        <FluentNavItem OnClick='@(async (MouseEventArgs _) => await DialogService.ShowInfoAsync("Submissions selected"))'>
+            Submissions
+        </FluentNavItem>
+
+    
+    </FluentNavCategory>
+
+
+    <!-- Divider -->
+    <FluentDivider />
+    <FluentNavItem  IconRest="@((new FluentUIIcons.Regular.Size20.People()))" IconActive="@((new FluentUIIcons.Filled.Size20.People()))">
+        Interviews
+    </FluentNavItem>
+
+
+
+
+
+
+</FluentNav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@code {
+}
